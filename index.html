@@ -1,98 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sanjana</title>
   </head>
-  <body class="">
-    <section class="font-sans bg-gradient-to-br from-pink1 to-pink2">
-      <div flex="flex flex-col">
-        <div class="flex flex-row">
-          <div
-            class="text-[1.7rem] w-2/3 text-center duration-500 text-white bg-black py-4 px-1.5 my-2 ml-2 rounded-xl bg-opacity-60"
-          >
-            <p class="font-bold">To Sanjana!❤️</p>
-          </div>
-          <div
-            class="text-[1.15rem] w-1/3 text-white text-center bg-black py-2 m-2 rounded-xl bg-opacity-60 font-bold duration-500"
-          >
-            <p class="font-bold animate-pulse" id="date1">2 Jan 2023</p>
-            <p class="font-bold animate-pulse" id="date2">Monday</p>
-
-          </div>
-        </div>
-        <audio id="audiocontrol" class="hidden" controls autoplay loop>
-          <source src="./sonh.mp3" type="audio/mp3">
-        </audio>
-        <div>
-          <div
-            class="text-white duration-500 flex flex-col bg-black p-4 mx-2 mb-2 ml-2 rounded-xl bg-opacity-60"
-          >
-            <div class="shadow-xl shadow-red-400 ">
-              <img src="./photo.png" alt="" class="rounded-xl " />
+  <body class="flex flex-col">
+    <section
+      id="special"
+      class="flex flex-col bg-gradient-to-br from-gray-400 via-slate-800 to-slate-400"
+    >
+      <div class="flex flex-col justify-center mt-14 text-center text-white">
+        <p class="font-bold text-xl" id="date_edit">
+          Friday, 27th Januray 2023
+        </p>
+        <p class="font-bold font-domaine text-8xl" id="time_edit">09:45</p>
+      </div>
+      <div class="my-4 mx-8 duration-1000">
+        <img id="spec1" class="rounded-3xl" src="" alt="" />
+      </div>
+      <div
+        class="text-center duration-1000 text-white bg-opacity-50 rounded-3xl backdrop-blur-3xl bg-black mx-2"
+      >
+        <div class="py-2">
+          <div class="flex flex-row justify-between mx-3">
+            <div id="spec3" class="w-1/6 invisible">
+              <img id="spec5" src="" class="rounded-lg" alt="" />
             </div>
-            <div class="flex flex-row">
-              <div class="flex flex-col w-2/3">
-                <p class="text-2xl mt-3 font-bold">Until I Found You</p>
-                <p>Feat : Sanju</p>
-              </div>
-              <div id="noice" class="w-1/3 flex flex-row justify-end items-center duration-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-14 h-14"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
+            <div
+              id="spec4"
+              class="w-4/6 duration-500 flex flex-col text-left items-center justify-start"
+            >
+              <p id="spec7" class="font-bold font-sans">Sugar</p>
+              <p id="spec8" class="">Maroon 5</p>
+            </div>
+            <audio id="audiocontrol" class="hidden" controls autoplay loop>
+              <source id="spec6" src="" type="audio/mp3" />
+            </audio>
+            <div class="flex w-1/6 flex-col justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="red"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke=""
+                class="w-8 h-8 animate-pulse"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
             </div>
           </div>
-        </div>
-        <div class="flex flex-row">
-          <div
-            class="  w-full duration-500 text-white bg-black p-4 mb-2 mx-2 rounded-xl bg-opacity-60"
-          >
-            <p class="font-bold text-left text-3xl tracking-tighter mb-3 text-yellow-400">
-              Hey Sanjana!!❤️
+          <div></div>
+          <div class="flex flex-row justify-evenly">
+            <p id="contrprev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-12 h-12"
+              >
+                <path
+                  d="M9.195 18.44c1.25.713 2.805-.19 2.805-1.629v-2.34l6.945 3.968c1.25.714 2.805-.188 2.805-1.628V8.688c0-1.44-1.555-2.342-2.805-1.628L12 11.03v-2.34c0-1.44-1.555-2.343-2.805-1.629l-7.108 4.062c-1.26.72-1.26 2.536 0 3.256l7.108 4.061z"
+                />
+              </svg>
             </p>
-            <p class="text-justify">
-              <img id="asd" src="./pic2.png" alt="" class="rounded-xl duration-1000 mb-2 grayscale">
+            <p id="contr">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-12 h-12"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                  clip-rule="evenodd"
+                />
+              </svg>
             </p>
-            <p class="text-justify">This is a Special Message, supposed to be sent yesterday! but got stuck with some errands! and I have added a music to it, you are like the artist of the song! If for some reason it doesn't plays, just press the play Icon! ;), Hope you read through it... </p>
-            <p class="text-justify">I would like to take a moment, to <span class="font-bold">THANK YOU SO MUCH!</span> If the picture is in black and white, press or tap on the pic, that is how you are to my life! I have been such an assol right? Yes, I troubled you a lot by giving damaging comments and never given a proper thought to it! I'm truly <span class="font-bold">SORRY!</span> It must have been hard! All I wanted is to spend some time with you and give some surprises! You know what, I wanted to meet you very badly so many times, once was when I came to give Mango, but your dad was there and you were busy prep for CA! and secondly on your birthday! Thirdly, if you were in Banglore in first week of december! I would have definitely met you! But, We finally meet at the end but, you missed a lot of things though👉👈! Because of me, your dad would have scolded you! I am really sorry for that! I am Just filled with tears! You are an amazing person, with a <span class="font-bold">kind heart</span> and a <span class="font-bold">beautiful soul</span>. I am so lucky to have you in my life, and I am so <span class="font-bold">grateful </span>for all the <span class="font-bold">special memories </span>we have shared together! I am so thankful to have you by my side! Trust me you are the only one who sticked with me till this second! Losing you is a loss for me!!!! True! Time flies by, yet we are <span class="font-bold">still together! </span>Why crying and all? I want you to be happy forever! Keep up the same smile in the picture and soon show your teeth, I want to take as many pictures to show that you are my Idiot! It is always about your inner personality that I liked!! These words are to less to describe about you!! If you ever need anything, don't hesitate I'll always be there for you!! Happy New Year 2k23!! Yes if you ever get time, and if you wanna catch or go out just give a call an hour or two before, I'll be there, no matter if I'm in hostel! And yea! I had an idea of updating this website for you maybe every week or month! If you only agree to it!! Just FYI this website is made from HTML, CSS and JavaScript! I'm sorry if I have troubled you! I do have some guilt on doing mistakes on you! And yea! I'm sorry this is the best website design I could make for you! Hope you like it! <span class="font-bold">Take care! Love yaa!!</span></p>
-          </div>
-        </div>
-        <div class="flex flex-row">
-          <div
-            class=" text-center w-full duration-500 text-white bg-black p-4 mb-2 mx-2 rounded-xl bg-opacity-60"
-          >
-            <p class="font-bold text-3xl tracking-tighter mb-3 text-yellow-400">
-              Happy New Year 2K23🎉
+            <!-- <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </p> -->
+            <p id="contrnext">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-12 h-12"
+              >
+                <path
+                  d="M5.055 7.06c-1.25-.714-2.805.189-2.805 1.628v8.123c0 1.44 1.555 2.342 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.342 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256L14.805 7.06C13.555 6.346 12 7.25 12 8.688v2.34L5.055 7.06z"
+                />
+              </svg>
             </p>
-            <p class="text-justify">
-              <img src="./pic3.png" alt="" class="rounded-xl duration-1000 mb-2">
-            </p>
-            <p class="text-justify">
-              As the New Year approaches, I can't help but feel a sense of excitement and renewal! It's a time to reflect on the past year and all that we've accomplished, and to set new goals and resolutions for the year ahead! It's a chance to start fresh and make the most of every moment!! As I look back on the past year, I am filled with gratitude for all the love and support you gave to me!!! I am so lucky to have you in my life, and I am excited to see what the New Year brings for us. Here's to making the most of every opportunity and living each day to the fullest. Happiest New Year 2023! 😊
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-row">
-          <div
-            class="text-[1.7rem] w-full text-center duration-500 text-white bg-black py-4 px-1.5 mb-2 mx-2 rounded-xl bg-opacity-60"
-          >
-            <p class="font-bold">Made with Love ❤️</p>
           </div>
         </div>
       </div>
+      <div class="flex flex-row justify-between mx-6 my-4">
+        <div
+          class="bg-black bg-opacity-50 backdrop-blur-xl p-3 rounded-full hover:bg-white duration-500"
+        >
+          <a href="tel:+919902106941" class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-8 h-8 text-white hover:text-lime-500"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="text-white flex flex-col px-6 border-white border-b-4 text-center"
+        >
+          <p class="animate-bounce duration-1000 font-semibold">Swipe Up</p>
+        </div>
+        <div
+          class="bg-black bg-opacity-50 backdrop-blur-xl p-3 rounded-full hover:bg-white duration-500"
+        >
+          <a href="https://drive.google.com/drive/folders/1MilV9RS1o40awPgXs_aZSInjHloK2021?usp=sharing">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-8 h-8 text-white hover:text-amber-500"
+            >
+              <path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
+              <path
+                fill-rule="evenodd"
+                d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
     </section>
-  </body>
-  <script defer src="./main.js"></script>
+    <section class="bg-gradient-to-b from-purple-800 via-violet-900 to-purple-800">
+      <div class="px-6 py-4">
+        <div class="">
+          <p class="text-white font-bold text-4xl">Must Watch</p>
+        </div>
+        <div class="grid grid-flow-row grid-cols-2 gap-2 mt-6 text-white text-center">
+          <a href="https://gogoanime.mn/tokyo-revengers-15585" class="bg-black bg-opacity-50 rounded-xl">
+            <img class="rounded-xl p-1" src="https://img.bunnycdnn.ru/_r/300x400/100/c0/4e/c04ee7106ea54910abdd39563d239374/c04ee7106ea54910abdd39563d239374.jpg" alt="">
+            <p class="py-2 text-center">Tokyo Revengers</p>
+          </a>
+          <a href="https://gogoanime.mn/i-want-to-eat-your-pancreas-70" class="bg-black bg-opacity-50 rounded-xl">
+            <img class="rounded-xl p-1" src="https://img.bunnycdnn.ru/_r/300x400/100/6a/6d/6a6d4e47bca47ad4eb3656dbc606ea23/6a6d4e47bca47ad4eb3656dbc606ea23.jpg" alt="">
+            <p class="py-2 text-center">I want to eat your Pancreas</p>
+          </a>
+          <a href="https://gogoanime.mn/a-silent-voice-11" class="bg-black rounded-xl bg-opacity-50">
+            <img class="rounded-xl p-1" src="https://img.bunnycdnn.ru/_r/300x400/100/7f/c6/7fc61d82b89949dff4319bd73ff2d456/7fc61d82b89949dff4319bd73ff2d456.jpg" alt="">
+            <p class="py-2 text-center">A Silent Voice</p>
+          </a>
+          <a href="https://gogoanime.mn/violet-evergarden-the-movie-2020-159" class="bg-opacity-50 bg-black rounded-xl">
+            <img class="rounded-xl p-1" src="https://img.bunnycdnn.ru/_r/300x400/100/ed/1c/ed1c6fd65a6dab12e75dc038acc2fec2/ed1c6fd65a6dab12e75dc038acc2fec2.jpg" alt="">
+            <p class="py-2 text-center">Violet Evergarden</p>
+          </a>
+          <a href="https://www.fmovies.hn/tv/watch-the-last-of-us-full-92254" class="bg-opacity-50 bg-black rounded-xl">
+            <img class="rounded-xl p-1" src="https://img.fmovies.hn/xxrz/250x400/346/0b/4f/0b4f694b650aad2017b8385df8bbbc6b/0b4f694b650aad2017b8385df8bbbc6b.jpg" alt="">
+            <p class="py-2 text-center">The Last of Us</p>
+          </a>
+          <a href="https://www.fmovies.hn/movie/watch-the-perks-of-being-a-wallflower-full-18953" class="bg-black rounded-xl bg-opacity-50">
+            <img class="rounded-xl p-1" src="https://img.fmovies.hn/xxrz/250x400/346/94/58/94583301a287d7ad7b572f239b34e25b/94583301a287d7ad7b572f239b34e25b.jpg" alt="">
+            <p class="py-2 text-center">The perks of being wallflower</p>
+          </a>
+          <a href="https://www.fmovies.hn/movie/watch-the-fault-in-our-stars-full-18754" class="bg-black rounded-xl bg-opacity-50">
+            <img class="rounded-xl p-1" src="https://img.fmovies.hn/xxrz/250x400/346/0c/e5/0ce52c09138aeb75ddefb4d6dd73b242/0ce52c09138aeb75ddefb4d6dd73b242.jpg" alt="">
+            <p class="py-2 text-center">The fault in our stars</p>
+          </a>
+          <a href="https://www.fmovies.hn/movie/watch-the-social-network-full-18956" class="bg-black rounded-xl bg-opacity-50">
+            <img class="rounded-xl p-1" src="https://img.fmovies.hn/xxrz/250x400/346/0a/62/0a62bd4ee123a8119b2ca2fd26e00ed6/0a62bd4ee123a8119b2ca2fd26e00ed6.jpg" alt="">
+            <p class="py-2 text-center">The Social Network</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gradient-to-r from-orange-400 to-rose-400">
+      <div class="m-6 bg-white bg-opacity-80 rounded-xl p-4">
+        <p class="font-bold text-4xl">My dearest best friend,❤️</p>
+        <p>Hey! How have you been? I hope this message finds you well! I have been asking you lot of wierd questions lately, and also I might have been cringy. You might be angry, sad or disappointed! I'm sorry if you had considered our friendship something else, I never want to be in relationship until I achieve my goals! <b>Truth is I value our friendship very deeply, I care for you a lot dude cause you have always been there in my toughest times!!</b> </p>
+        <p>
+          Yes, it has been bothering me that you are not replying propely, but it's fine cause your goals >> other things, I dont want to trouble you!
+        </p>
+        <p>
+          Well you might think, why did this creep do this website! Well Why? As I have told I care and love you!
+        </p>
+        <p>
+          I don't want to stress again!! You are an amazing person and I am so grateful to have you in my life! I hope you know you are loved and valued, not just by me, but by many people in your life, and I will always see you grow, and also be there for you!
+        </p>
+        <p>You had asked me 'Why would you wait for me?' continuing the answer, I mean that's what friends do right, they shall stay back until they are alright, you protect and care them right, like you had come to my home, after breaking up the movie night! You bunked classes for me, inspite of me asking for a minute. That is why I love and care you a lot.</p>
+        <p>Anyways..., This website is yours, just in case you ever want to talk to me or want to share something, you can press the call and camera icons. I tried making intro page in Iphone style though you still love oneplus, so that someday you will like apple devices! There are couple songs you can listen, they are pop-mix cause I love them! (I know you can listen on spotify but you shall have to go through annoying ads) Sorry if I am forcing you to hear or you might have listened before! one more thing, click on the song cover, you shall reveal something, and if you don't want click again on the small song cover. There are also some shows you can watch in case you are free, just click on it! It will take you to the movie website!</p>
+        <p>
+          I want to know you to know I love you and I am looking forward to connecting again soon. Take care of yourself, and know that I am always thinking of you! Until then...byeee! ❤️
+        </p>
+      </div>
+    </section>
 
+    <script src="./main.js"></script>
+  </body>
 </html>
