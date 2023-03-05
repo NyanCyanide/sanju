@@ -54,8 +54,8 @@ g.addEventListener("click", function (s) {
   var n = document.getElementById("asd").value,
     i = { data: n, date: new Date() };
   if (n.length != 0) {
-    var o = window.prompt("Enter passcode :");
-    o == "smb" &&
+//     var o = window.prompt("Enter passcode :");
+//     o == "smb" &&
       firestore
         .collection("message")
         .add(i)
@@ -85,8 +85,8 @@ h.addEventListener("click", function (s) {
       date: new Date(),
     };
   if (n.length != 0 && i.length != 0 && o.length != 0) {
-    var t = window.prompt("Enter passcode :");
-    t == "smb" &&
+//     var t = window.prompt("Enter passcode :");
+//     t == "smb" &&
       firestore
         .collection("food")
         .add(e)
