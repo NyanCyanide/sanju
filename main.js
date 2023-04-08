@@ -1,123 +1,139 @@
 (function () {
-  const n = document.createElement("link").relList;
-  if (n && n.supports && n.supports("modulepreload")) return;
-  for (const e of document.querySelectorAll('link[rel="modulepreload"]')) o(e);
-  new MutationObserver((e) => {
-    for (const t of e)
-      if (t.type === "childList")
-        for (const d of t.addedNodes)
-          d.tagName === "LINK" && d.rel === "modulepreload" && o(d);
+  const c = document.createElement("link").relList;
+  if (c && c.supports && c.supports("modulepreload")) return;
+  for (const t of document.querySelectorAll('link[rel="modulepreload"]')) d(t);
+  new MutationObserver((t) => {
+    for (const n of t)
+      if (n.type === "childList")
+        for (const u of n.addedNodes)
+          u.tagName === "LINK" && u.rel === "modulepreload" && d(u);
   }).observe(document, { childList: !0, subtree: !0 });
-  function i(e) {
-    const t = {};
+  function p(t) {
+    const n = {};
     return (
-      e.integrity && (t.integrity = e.integrity),
-      e.referrerPolicy && (t.referrerPolicy = e.referrerPolicy),
-      e.crossOrigin === "use-credentials"
-        ? (t.credentials = "include")
-        : e.crossOrigin === "anonymous"
-        ? (t.credentials = "omit")
-        : (t.credentials = "same-origin"),
-      t
+      t.integrity && (n.integrity = t.integrity),
+      t.referrerPolicy && (n.referrerPolicy = t.referrerPolicy),
+      t.crossOrigin === "use-credentials"
+        ? (n.credentials = "include")
+        : t.crossOrigin === "anonymous"
+        ? (n.credentials = "omit")
+        : (n.credentials = "same-origin"),
+      n
     );
   }
-  function o(e) {
-    if (e.ep) return;
-    e.ep = !0;
-    const t = i(e);
-    fetch(e.href, t);
+  function d(t) {
+    if (t.ep) return;
+    t.ep = !0;
+    const n = p(t);
+    fetch(t.href, n);
   }
 })();
-VANTA.FOG({
-  el: "#background-love",
-  mouseControls: !1,
+VANTA.CLOUDS({
+  el: "#sexcandy",
+  mouseControls: !0,
   touchControls: !0,
   gyroControls: !1,
   minHeight: 200,
   minWidth: 200,
-  highlightColor: 1903175,
-  midtoneColor: 721025,
-  baseColor: 515316,
-  blurFactor: 0.5,
-  speed: 2.8,
+  skyColor: 12737671,
+  cloudColor: 15898262,
+  cloudShadowColor: 15255401,
+  sunColor: 16777215,
+  sunGlareColor: 14732496,
+  sunlightColor: 15589067,
+  speed: 1.4,
 });
-let r = document.getElementById("counter"),
-  m = document.getElementById("add"),
-  f = document.getElementById("sub"),
-  c = document.getElementById("warning1"),
-  l = document.getElementById("warning2"),
-  a = document.getElementById("warning3"),
-  u = document.getElementById("warning4"),
-  g = document.getElementById("submission1"),
-  h = document.getElementById("submission");
-g.addEventListener("click", function (s) {
-  var n = document.getElementById("asd").value,
-    i = { data: n, date: new Date() };
-  if (n.length != 0) {
-//     var o = window.prompt("Enter passcode :");
-//     o == "smb" &&
-      firestore
-        .collection("message")
-        .add(i)
-        .then(function (e) {
-          console.log("Document written with ID: ", e.id);
-        })
-        .catch(function (e) {
-          console.error("Error adding document: ", e);
-        }),
-      s.preventDefault(),
-      (document.getElementById("asd").value = ""),
-      u.classList.remove("hidden"),
-      setTimeout(function () {
-        u.classList.add("hidden");
-      }, 5e3);
-  }
+var i = 0;
+let f = document.getElementById("prev"),
+  y = document.getElementById("next");
+document.getElementById("play");
+let m = document.getElementById("plaa");
+document.getElementById("spec");
+let r = document.getElementById("audiocontrol"),
+  o = document.getElementById("imagechanger"),
+  a = document.getElementById("mainname"),
+  l = document.getElementById("artistname"),
+  e = 1,
+  s = {
+    0: {
+      image: "./Assets/Images/wannabeyours.png",
+      name: "Wanna be yours",
+      artist: "Arctic Monkeys",
+      src: "./Assets/Music/wannabeyours.mp3",
+    },
+    1: {
+      image: "./Assets/Images/yestoheaven.jpg",
+      name: "Yes to Heaven",
+      artist: "Lana Del Rey",
+      src: "./Assets/Music/Heaven.mp3",
+    },
+    2: {
+      image: "./Assets/Images/dieforyou.jpg",
+      name: "Die for you",
+      artist: "Joji",
+      src: "./Assets/Music/Die for you.mp3",
+    },
+    3: {
+      image: "./Assets/Images/surething.jpg",
+      name: "Sure thing",
+      artist: "Miguel",
+      src: "./Assets/Music/surething.mp3",
+    },
+    4: {
+      image: "./Assets/Images/violet.jpg",
+      name: "The Color Violet",
+      artist: "Tory Lanez",
+      src: "./Assets/Music/Violet.mp3",
+    },
+    5: {
+      image: "./Assets/Images/snap.jpg",
+      name: "Snap",
+      artist: "Rosa Linn",
+      src: "./Assets/Music/Snap.mp3",
+    },
+  };
+y.addEventListener("click", function () {
+  e == 5
+    ? ((o.src = s[e].image),
+      (a.innerHTML = s[e].name),
+      (l.innerHTML = s[e].artist),
+      (r.src = s[e].src),
+      i == 0 ? r.pause() : r.play(),
+      (e = (e + 1) % 6))
+    : ((o.src = s[e].image),
+      (a.innerHTML = s[e].name),
+      (l.innerHTML = s[e].artist),
+      (r.src = s[e].src),
+      i == 0 ? r.pause() : r.play(),
+      e++);
 });
-h.addEventListener("click", function (s) {
-  var n = document.getElementById("food1").value,
-    i = document.getElementById("food2").value,
-    o = document.getElementById("food3").value,
-    e = {
-      breakfast: n,
-      lunch: i,
-      dinner: o,
-      count: parseInt(document.getElementById("counter").innerText),
-      date: new Date(),
-    };
-  if (n.length != 0 && i.length != 0 && o.length != 0) {
-//     var t = window.prompt("Enter passcode :");
-//     t == "smb" &&
-      firestore
-        .collection("food")
-        .add(e)
-        .then(function (d) {
-          console.log("Document written with ID: ", d.id);
-        })
-        .catch(function (d) {
-          console.error("Error adding document: ", d);
-        }),
-      s.preventDefault(),
-      (document.getElementById("food1").value = ""),
-      (document.getElementById("food2").value = ""),
-      (document.getElementById("food3").value = ""),
-      (r.innerText = 0),
-      a.classList.remove("hidden"),
-      setTimeout(function () {
-        a.classList.add("hidden");
-      }, 5e3);
-  }
+let g = 0;
+f.addEventListener("click", function () {
+  g == 0 && ((e = 5), (g = 1)),
+    e == 0
+      ? ((o.src = s[e].image),
+        (a.innerHTML = s[e].name),
+        (l.innerHTML = s[e].artist),
+        (r.src = s[e].src),
+        i == 0 ? r.pause() : r.play(),
+        (e = (e - 1) % 6))
+      : ((o.src = s[e].image),
+        (a.innerHTML = s[e].name),
+        (l.innerHTML = s[e].artist),
+        (r.src = s[e].src),
+        i == 0 ? r.pause() : r.play(),
+        e--);
 });
 m.addEventListener("click", function () {
-  parseInt(r.innerText) < 10
-    ? ((r.innerText = parseInt(r.innerText) + 1),
-      c.classList.add("hidden"),
-      l.classList.add("hidden"))
-    : c.classList.contains("hidden") && c.classList.remove("hidden");
-});
-f.addEventListener("click", function (s) {
-  parseInt(r.innerText) > 0
-    ? ((r.innerText = parseInt(r.innerText) - 1),
-      l.classList.add("hidden"),
-      c.classList.add("hidden"))
-    : l.classList.contains("hidden") && l.classList.remove("hidden");
+  i == 0
+    ? (r.play(),
+      (m.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
+    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM9 8.25a.75.75 0 00-.75.75v6c0 .414.336.75.75.75h.75a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75H9zm5.25 0a.75.75 0 00-.75.75v6c0 .414.336.75.75.75H15a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75h-.75z" clip-rule="evenodd" />
+  </svg>`),
+      (i = 1))
+    : (r.pause(),
+      (m.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
+    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z" clip-rule="evenodd" />
+  </svg>`),
+      (i = 0));
 });

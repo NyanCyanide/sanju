@@ -3,258 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.ico" />
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
-    <script>
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyC2_ex4YSRh7XQLJgNx5c6qCoFdy7SpkGw",
-        authDomain: "sanju-cc2a3.firebaseapp.com",
-        databaseURL:
-          "https://sanju-cc2a3-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "sanju-cc2a3",
-        storageBucket: "sanju-cc2a3.appspot.com",
-        messagingSenderId: "431662852176",
-        appId: "1:431662852176:web:749d7caafe945b086e8955",
-        measurementId: "G-R94HD1P73J",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
 
-      // Get a reference to the Firestore service
-      var firestore = firebase.firestore();
-    </script>
-
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.clouds.min.js"></script>
+    <script src="vanta.clouds.min.js"></script>
     <title>Sanjana</title>
   </head>
-  <body id="background-love" class="md:overflow-hidden">
-    <section class="overflow-y-auto h-screen w-screen">
-      <div class="bg-white glass-effect p-2 flex flex-row mx-3 mt-3">
-        <div class="">
-          <img class="h-24 w-24" src="./Assets/IOS images/heyy.png" alt="" />
-        </div>
-        <div class="flex flex-col font-bold text-left justify-center">
-          <p class="text-xl text-white">Wubba Lubba Dub Dub!</p>
-          <p class="text-3xl text-white">Hey Sanjana!</p>
-        </div>
+  <body id="sexcandy" class="h-screen w-screen overflow-hidden">
+    <audio id="audiocontrol" class="hidden" controls autoplay loop>
+      <source id="spec" src="./Assets/Music/Wanna be yours.mp3" type="audio/mp3" />
+    </audio>
+    <section
+      class="border-t-2 border-rose-400 font-delicious md:h-screen"
+    >
+      <div class="mx-6 my-3 md:my-6 text-white">
+        <p class="text-3xl md:text-6xl">Hey you Snookum!</p>
       </div>
-
-      <div class="bg-white glass-effect p-2 flex flex-col mx-3 mt-3">
-        <div class="m-2 flex flex-row justify-start items-center">
-          <img
-            src="./Assets/img/notes.png"
-            class="h-10 w-10 rounded-lg"
-            alt=""
-          />
-          <p class="text-3xl text-white mx-2 font-bold">March Notes</p>
-        </div>
-        <div class="m-2 flex flex-col">
-          <div class="flex flex-row items-center justify-between">
-            <img class="w-1/3" src="./Assets/IOS images/hehe.png" alt="" />
-            <img class="w-1/3" src="./Assets/IOS images/hey.png" alt="" />
-            <img class="w-1/3" src="./Assets/IOS images/hehee.png" alt="" />
-          </div>
-          <div class="text-white font-bold mt-3 text-justify bg-blend-screen">
-            <p class="text-3xl">親愛なる親友、</p>
-            <p>
-              How have you been? March has approached, and yea... it's season
-              summer and also exams, it can be stressful right? Don't you worry,
-              you have worked your ass all day long! Tution in the morning and
-              college in the evening, with this amount of time and dedication on
-              studies you will ACE it up!
-            </p>
-            <p>
-              Summer, Summer, Summer it can be drainful walking out! Don't
-              forget to carry your Umbrella, cause UV-index is rising, which can
-              cause much aging, so be careful, apply lotion which is above
-              SPF-50. Drink plenty of water! and you dumb ass, don't you dare
-              lie about having breakfast and lunch (things gonna get serious as
-              scroll),I don't want to lose you by losing your consiousness, now
-              don't tell me "not worry about you", this time it's not gonna
-              work! cause you relate to this (Naayi bala donku), so please take
-              care, I'll be there for you 24/7 virtually, but physcial not
-              always, so you have to take care of yourself!
-            </p>
-            <p>
-              Anyways, I'm happy and proud that you are doing CA, which is
-              highly respectable job, and also get all my income tax filing and
-              tallying things from you 😂. Jokes apart, you are such an
-              inspiration to me. Your determination and dedication to your
-              studies are truly admirable!
-            </p>
-            <p>
-              And yea! so when you have time, let's meet up..!, but this time
-              you gotta fly all the way to Nagarbhavi! it's beautiful as
-              Rajajinagar, and let's keep exploring places! Now, enough enough!
-              Go study dumb head! Byeee! Love you! ❤️
-            </p>
-          </div>
-        </div>
+      <div class="mx-6 my-3 md:my-6 text-white">
+        <p class="text-xl indent-10 md:indent-0">
+          Yeahhh! landed on April, just finished with one-third of the year!
+          Maybe it's time for nature to nurture again to blossom beautfully
+          again, until then why not cruise on the sky with the clouds listening
+          to the music.
+        </p>
       </div>
-      <div class="bg-white glass-effect p-2 flex flex-col mx-3 mt-3">
-        <div class="m-2 flex flex-row justify-start items-center">
-          <img
-            src="./Assets/img/gallery.png"
-            class="h-10 w-10 rounded-lg"
-            alt=""
-          />
-          <p class="text-3xl text-white mx-2 font-bold">Photos</p>
+      <div class="mx-6 my-3 md:my-6 text-xl bg-opacity-60 backdrop-filter backdrop-blur-lg bg-white rounded-lg">
+        <div>
+          <p class="mx-4 pt-2 text-2xl">Start Listening...</p>
         </div>
-        <div class="">
-          <img class="rounded-2xl" src="./Assets/US/3.jpeg" alt="" />
-        </div>
-        <div class="flex flex-row">
-          <div class="w-1/2 flex flex-col justify-between my-2">
-            <img class="rounded-xl pr-2" src="./Assets/US/8.jpeg" alt="" />
-            <img class="rounded-xl pr-2" src="./Assets/US/9.jpeg" alt="" />
+        <div class="mt-2 pb-2 mx-2 flex flex-row">
+          <div class="w-1/3">
+            <img id="imagechanger"
+              src="./Assets/Images/wannabeyours.png"
+              
+              alt="music image"
+              class="rounded-xl scale-90"
+            />
           </div>
-          <div class="w-1/2 my-2">
-            <img class="rounded-xl" src="./Assets/US/1.jpeg" alt="" />
-          </div>
-        </div>
-        <div class="">
-          <img class="rounded-2xl" src="./Assets/US/7.jpeg" alt="" />
-        </div>
-      </div>
-      <div class="bg-white glass-effect p-2 flex flex-col mx-3 mt-3 mb-3">
-        <div class="m-2 flex flex-row justify-start items-center">
-          <img
-            src="./Assets/img/health.png"
-            class="h-10 w-10 rounded-lg"
-            alt=""
-          />
-          <p class="text-3xl text-white mx-2 font-bold">Health</p>
-        </div>
-        <div class="text-white m-2 font-bold mt-3 text-justify bg-blend-screen">
-          <form class="flex flex-col">
-            <p class="text-2xl">Meals</p>
-            <p>
-              Now, Now, no lying... tell me honestly.. tell me what you had, if
-              you have skipped! type "fuck off"
-            </p>
-            <label class="text-xl" for="food1">Breakfast :</label>
-            <input
-              class="p-2 text-black ring-2 rounded-xl ring-slate-800"
-              type="text"
-              id="food1"
-              required
-            />
-            <label class="text-xl" for="food2">Lunch :</label>
-            <input
-              class="p-2 text-black ring-2 rounded-xl ring-slate-800"
-              type="text"
-              id="food2"
-              required
-            />
-            <label class="text-xl" for="food3">Dinner :</label>
-            <input
-              class="p-2 text-black ring-2 rounded-xl ring-slate-800"
-              type="text"
-              id="food3"
-              required
-            />
-            <p class="text-2xl mt-3">Hydration level</p>
-            <p>
-              Considering you carry whiskey bottles...tell me how much were you
-              drunk?
-            </p>
-            <div class="flex flex-row justify-between items-center">
-              <div id="sub" class="py-2 px-4 bg-cyan-400 rounded-xl">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="black"
-                  class="w-6 h-6"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-                    clip-rule="evenodd"
-                  />
+          <div class="w-2/3 ml-2 flex flex-col">
+            <div>
+              <p id="mainname" class="text-2xl">Wanna be yours</p>
+              <p id="artistname" class="text-xl">Arctic Monkeys</p>
+            </div>
+            <div class="flex flex-row justify-between">
+              <div >
+                <svg id="prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
+                  <path d="M9.195 18.44c1.25.713 2.805-.19 2.805-1.629v-2.34l6.945 3.968c1.25.714 2.805-.188 2.805-1.628V8.688c0-1.44-1.555-2.342-2.805-1.628L12 11.03v-2.34c0-1.44-1.555-2.343-2.805-1.629l-7.108 4.062c-1.26.72-1.26 2.536 0 3.256l7.108 4.061z" />
                 </svg>
+                
               </div>
-              <p id="counter">0</p>
-              <div id="add" class="py-2 px-4 bg-lime-500 rounded-xl">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="black"
-                  class="w-6 h-6"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
-                    clip-rule="evenodd"
-                  />
+              <div id="plaa">
+                <svg id="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
+                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z" clip-rule="evenodd" />
                 </svg>
+                
+              </div>
+              <!-- <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
+                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM9 8.25a.75.75 0 00-.75.75v6c0 .414.336.75.75.75h.75a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75H9zm5.25 0a.75.75 0 00-.75.75v6c0 .414.336.75.75.75H15a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75h-.75z" clip-rule="evenodd" />
+              </svg>
+              
+              </div> -->
+              <div >
+                <svg id="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
+                  <path d="M5.055 7.06c-1.25-.714-2.805.189-2.805 1.628v8.123c0 1.44 1.555 2.342 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.342 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256L14.805 7.06C13.555 6.346 12 7.25 12 8.688v2.34L5.055 7.06z" />
+                </svg>
+                
+                
               </div>
             </div>
-            <p id="warning1" class="hidden text-center text-black">
-              Don't tell me you over drank!
-            </p>
-            <p id="warning2" class="hidden text-center text-black">
-              Don't tell me whiskey drank you!
-            </p>
-            <p id="warning3" class="hidden text-center text-black">
-              Notified to Master!
-            </p>
-
-            <button
-              type="submit"
-              id="submission"
-              class="rounded-xl bg-gradient-to-r from-yellow-400 via-pink-500 to-fuchsia-700 my-2 text-white p-3"
-            >
-              Submit
-            </button>
-          </form>
+          </div>
         </div>
       </div>
-      <div class="bg-white glass-effect p-2 flex flex-col mx-3 mt-3 mb-3">
-        <div class="m-2 flex flex-row justify-start items-center">
-          <img
-            src="./Assets/img/message.png"
-            class="h-10 w-10 rounded-lg"
-            alt=""
-          />
-          <p class="text-3xl text-white mx-2 font-bold">Message</p>
-        </div>
-        <div class="text-white m-2 font-bold mt-3 text-justify bg-blend-screen">
-          <form class="flex flex-col">
-            <p>
-              Dump anything, and would you like to say something to your master?
-            </p>
-            <label class="text-xl" for="messagebaby">Drop :</label>
-            <textarea
-              class="p-2 text-black ring-2 rouned-xl ring-slate-800"
-              name="messagebaby"
-              id="asd"
-              cols="30"
-              rows="5"
-              required
-            ></textarea>
-
-            <p id="warning4" class="hidden text-center text-black">
-              Notified to Master!
-            </p>
-
-            <button
-              type="submit"
-              id="submission1"
-              class="rounded-xl bg-gradient-to-r from-yellow-400 via-pink-500 to-fuchsia-700 my-2 text-white p-3"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
+      <div class="mx-6 my-3 md:my-6 text-white">
+        <p>Just wanted to let you know that you make the world a better place just by being in it. Your smile can brighten up even the cloudiest of days, and your kindness never goes unnoticed, and yea do have proper meals! I've got your back. So don't hesitate to reach out if you ever need anything. See you soon! Love you!</p>
       </div>
     </section>
   </body>
-  <script type="module" src="./main.js"></script>
-  <script></script>
+  <script defer type="module" src="./main.js"></script>
 </html>
