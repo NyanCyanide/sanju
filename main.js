@@ -74,10 +74,10 @@ let r = document.getElementById("audiocontrol"),
       src: "./Assets/Music/Die for you.mp3",
     },
     3: {
-      image: "./Assets/Images/Sure thing.jpg",
+      image: "./Assets/Images/surething.jpg",
       name: "Sure thing",
       artist: "Miguel",
-      src: "./Assets/Music/surething.mp3",
+      src: "./Assets/Music/Sure thing.mp3",
     },
     4: {
       image: "./Assets/Images/violet.jpg",
